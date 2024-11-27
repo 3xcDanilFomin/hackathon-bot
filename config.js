@@ -8,7 +8,9 @@ export const configBot = {
     "CAACAgIAAxkBAAENOWtnRgvJ3XmMGgFW_j7PQV7zVHsY5AACNQEAAjDUnRG0uDX9ZqC2fDYE",
   options: {
     reply_markup: JSON.stringify({
-      inline_keyboard: [[{ text: "Пройти тест", callback_data: "1" }]],
+      inline_keyboard: [
+        [{ text: "Пройти тест", web_app: { url: "https://hackathon-front-rho.vercel.app/" } }],
+      ],
     }),
   },
 };
